@@ -60,11 +60,11 @@
         <div class="content-wrap">
             <div class='content-item'>
                 <div>姓 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 名</div>
-                <div class='name'>李泽臻</div>
+                <div class='name'></div>
             </div>
             <div class='content-item'>
                 <div>学 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 号</div>
-                <div class="number">3118004020</div>
+                <div class="number"></div>
             </div>
             <div class='content-item'>
                 <div>学 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 院</div>
@@ -87,7 +87,7 @@
     let number = document.querySelector('.number');
     let arr = search.split('=');
     let arr1 = arr[1].split('&');
-    name.innerHTML = arr1[0];
+    name.innerHTML = decodeURIComponent(arr1[0]);
     number.innerHTML = arr[2];
 </script>
 </html>
